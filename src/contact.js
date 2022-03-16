@@ -3,6 +3,7 @@ const contactUs = () => {
     document.body.style.cssText = '';
     let div = document.querySelector('#sc');
     div.innerHTML = '';
+    div.removeAttribute('class');
     div.classList.add('contacts');
     div.innerHTML = '<p>Have fun with your friends:</p>'+
             '<p>Gubskogo str., 41, Lugansk, Ukraine, 91000</p>'+
