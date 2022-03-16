@@ -1,0 +1,365 @@
+@font-face {
+    font-family: 'Rye';
+    src: url('./Rye-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Fredericka the Great';
+    src: url('./FrederickatheGreat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Bigshot One';
+    src: url('./BigshotOne-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url(./main-background.jpg);
+    
+}
+#content{
+    margin:0px;
+    padding: 0px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    background-image: url(./logo.png);
+    width:200px;
+    height: 100%;
+}
+
+.logo-btn{
+    display:block;
+    width: 100%;
+    height:100%;
+}
+
+.logo:hover{
+    /*opacity: 0;
+    /*background-color: rgba(100, 97, 97, 0.9);*/
+    background-image: url(./logo-alt-removebg-yellow.png);
+}
+
+#header {
+    height:118px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(170, 159, 159, 0.6);
+}
+
+.head-nav {
+    height: 100%;
+    width: 200px;
+    flex: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 45px;
+}
+
+.head-nav li:hover {
+    background-color: rgba(100, 97, 97, 0.9);
+}
+
+.head-nav li {
+    display: inline-block;
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    
+}
+
+.head-nav li a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 250%;
+    font-family: Fredericka the Great;
+    color: rgb(231, 231, 124);
+}
+
+.site-content, .contacts {
+    width: 100%;
+    height:487px; 
+    padding: 0;;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.site-content h1{
+    padding: 0;
+    margin: 0;
+    font-family: Rye;
+    font-size: 650%;
+    width: 80%;
+    text-align: center;
+    color: rgb(231, 231, 124);
+}
+
+.main-logo{
+    font-family: Fredericka the Great;
+    color: rgb(231, 231, 124);
+    font-size: 230%;
+}
+
+.main-logo img {
+    width: 100px;
+    height: 50px;
+    opacity: 0.7;
+}
+
+.main-logo img:hover{
+    opacity: 0.5;
+}
+
+#footer {
+    height: 50px;
+    width: 100%;
+   
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#footer ul {
+    padding: 0;
+    display: flex;
+    
+    align-items: center;
+}
+
+.social-accounts li {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.social-accounts li:hover {
+    background-color: rgba(241, 241, 83, 0.5);
+}
+
+.social-accounts li a img {
+    width: 50px;
+    height: 50px;
+}
+
+.foot-nav {
+    height: 100%;
+    width: 300px;   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.foot-nav li{
+    display: inline-block;
+    
+    height: 100%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+
+.foot-nav li a:hover{
+    background-color: rgba(241, 241, 83, 0.5);
+    color: black;
+}
+
+.foot-nav li a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Fredericka the Great;
+    font-size: 105%;
+    color: black;
+    font-weight: 600;
+    text-decoration: solid;
+    border-radius: 10px;
+}
+
+.menu-item {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    background-color:rgba(170, 159, 159, 0.6);
+}
+
+.menu-item div {
+    width: 100%;
+    height: 100%;
+
+}
+
+.menu-item :last-child {
+    padding: 5px;
+    text-align: center;
+    font-family: Bigshot One;
+    font-size: x-large;
+}
+
+.menu-item :last-child :first-child{
+    font-size: xxx-large;
+    margin: 0;
+}
+
+.menu-content {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.body-menu {
+    background-color: rgb(211, 189, 162);
+}
+
+.header-fixed {
+    position: fixed;
+    /*background-color: rgb(170, 159, 159);*/
+}
+
+.contacts {
+        width:85%;
+        height: 465px;
+        background-color: rgba(170, 159, 159, 0.6);
+        margin: 10px;
+        font-family: Fredericka the Great;
+        color: rgb(238, 238, 40);
+        font-size: 300%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px 5px bisque;       
+}
+
+.about, .reserve {
+    margin-top: 150px;
+    width:85%;
+    height: 465px;
+    background-color: rgba(95, 89, 89, 0.6);
+    margin: 10px;
+    font-family: BigShot One;
+    color: rgb(238, 238, 40);
+    font-size: 1.3em;
+    border-radius: 20px;box-shadow: 0 0 10px 5px rgb(236, 231, 223); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about div {
+    width: 100%;
+    padding: 10px;
+    flex: 0 1 auto;
+}
+
+.about :last-child{
+    margin: 0;
+    display: flex;
+    gap: 3px;
+    justify-content: space-between;
+}
+
+.about div :first-child {
+    text-align: center;
+    font-size: 2.2 em;
+    
+}
+
+.about div img {
+    width: 190px;
+    height:180px;
+    flex:  1 1 auto;
+}
+
+.reserve {
+    justify-content: space-around;
+}
+
+.reserve div {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    height: 60%;
+}
+
+input {
+    margin: 10px;
+    background-color: rgb(214, 180, 138);
+}
+
+label {
+    width: 200px;
+    display:inline-block;
+}
+
+form span {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#submit {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: bisque;
+    font-family: Rye;
+    font-size: 1em;
+}
+
+
+
