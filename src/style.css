@@ -267,6 +267,10 @@ body{
     /*background-color: rgb(170, 159, 159);*/
 }
 
+div.about.contacts {
+    font-family: Fredericka the Great;
+}
+
 .contacts {
         width:85%;
         height: 465px;
